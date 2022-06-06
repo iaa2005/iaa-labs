@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IAA Labs Inc. | Astronomy</title>
+    <script src="../jquery.min.js"></script>
+    <script src="../index-2.js"></script>
+</head>
+<body>
+<div class="div-main">
+    <a class="text">300 дней астрономии</a>
+    <div class="calendar-div"></div>
+</div>
+<header>
+    <div class="header-in">
+        <a class="header-text" href="../">Проекты</a><a class="header-text" href="../astro">Астрономия</a>
+    </div>
+    <div class="header-in-2">
+        <a href="https://twitter.com/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/twitter.svg">
+        </a>
+        <a href="https://t.me/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/telegram.svg">
+        </a>
+        <a href="https://github.com/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/github.svg">
+        </a>
+    </div>
+</header>
+<style>
+    body {
+        margin: 0;
+        background: white;
+        width: 100vw;
+        height: 100vh;
+    }
+    header {
+        top: 0;
+        position: fixed;
+        width: -webkit-fill-available;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        align-items: center;
+    }
+    .header-in {
+        display: flex;
+        gap: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-in-2 {
+        display: flex;
+        gap: 15px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-text {
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        transition: color 0.5s;
+    }
+    .text {
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-text:hover {
+        color: black;
+    }
+    .img-social {
+        width: 25px;
+    }
+    .div-main {
+        margin-top: 120px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .calendar-div {
+        height: -webkit-fill-available;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        gap: 10px;
+        align-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .celum {
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        border: 2px solid #242424;
+        color: white;
+        font-family: -apple-system, sans-serif;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .trans {
+        background: white;
+    }
+    @keyframes opacity-00-100 {
+        from {
+            background: white;
+        }
+        to {
+            background: #242424;
+        }
+    }
+</style>
+</body>
+</html>

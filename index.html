@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IAA Labs Inc.</title>
+    <script src="jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="block-3">
+    <a class="center-img-out" href="https://otherscience.xyz/">
+        <img class="center-img" src="images/footer-otherscience.svg">
+    </a>
+</div>
+<div class="block-2">
+    <a class="center-img-out" href="https://fizcoin.xyz/">
+        <img class="center-img" src="images/logo-fizcoin-text.svg">
+    </a>
+</div>
+<div class="block-1">
+    <a class="center-img-out" href="https://fizmat.ga/">
+        <img class="center-img" src="images/fizmat-logo.svg">
+    </a>
+</div>
+<div class="block-main">
+    <a class="center-img-out" href="">
+        <img class="center-img" src="images/iaa-labs-logo.svg">
+    </a>
+</div>
+<header>
+    <div class="header-in">
+        <a class="header-text" href="">Проекты</a><a class="header-text" href="astro">Астрономия</a>
+    </div>
+
+    <div class="header-in-2">
+        <a href="https://twitter.com/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/twitter.svg">
+        </a>
+        <a href="https://t.me/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/telegram.svg">
+        </a>
+        <a href="https://github.com/iaa2005">
+            <img class="img-social" src="https://iaa2005.tk/assets/images/github.svg">
+        </a>
+    </div>
+</header>
+<style>
+    body {
+        margin: 0;
+        background: white;
+        width: 100vw;
+        height: 800vh;
+    }
+    header {
+        top: 0;
+        position: fixed;
+        width: -webkit-fill-available;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        align-items: center;
+    }
+    .header-in {
+        display: flex;
+        gap: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-in-2 {
+        display: flex;
+        gap: 15px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-text {
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        transition: color 0.5s;
+    }
+    .header-text:hover {
+        color: black;
+    }
+    .block-main, .block-1, .block-2, .block-3 {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        background: white;
+    }
+    .block-1, .block-2, .block-3 {
+        opacity: 0;
+    }
+    .center-img-out {
+        margin: auto;
+    }
+    .center-img {
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 25vh;
+        max-height: 250px;
+        display: block;
+    }
+    .remove {
+        display: none;
+    }
+    .img-social {
+        width: 25px;
+    }
+</style>
+</body>
+</html>
