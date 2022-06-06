@@ -21,6 +21,12 @@ $(document).ready(async function() {
             $(".block-3").css("opacity", (7 - window.scrollY / window.screen.height));
         }
 
+        if (window.scrollY / window.screen.height < 8) {
+            $(".block-4").css("opacity", window.scrollY / window.screen.height - 7);
+        } else {
+            $(".block-4").css("opacity", (9 - window.scrollY / window.screen.height));
+        }
+
         if (window.scrollY / window.screen.height < 1) {
             $(".block-main").removeClass("remove");
         } else {
