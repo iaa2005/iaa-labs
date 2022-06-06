@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IAA Labs Inc.</title>
+</head>
+<body>
+<div class="div-main">
+    <a>О себе</a>
+    <a>Меня зовут Иванов Александр, и мне 17 лет. Я учусь в Физтех-лицее им. П.Л. Капицы в г.Долгопрудном.
+        Учусь на физмат профиле. Участник заключительного этапа ВСОШ по астрономии. Интересуюсь физикой, астрономией,
+        программированием и математикой.</a>
+    <a>Больше всего мне нравится программировать: верстать сайты, писать программы на разных языках программирования и
+        смарт-контракты для блокчейна. На данный момент я разрабатываю несколько проектов: Fizmat, FizCoin, Otherscience
+    и Yuamble.</a>
+    <a>Fizmat — доделанный проект, создан для учеников. В нем все есть: и физика, и математика, и астрономия, и
+        даже нужные книги для олимпиад.</a>
+    <a>FizCoin — монета, или правильнее токен, разработанный на блокчейне Polygon. Создан для Fizmat DAO и проекта
+        Otherscience.</a>
+    <a>Otherscience — проект, над котором я сейчас работаю. Проект создан для децентрализованных олимпиад и
+        многопользовательских игр. А NFT, генерирующиеся при правильном ответе на задачу, дадут возможность
+        получить выртуальные предметы, земли, скины для игр. Здесь NFT мотивируют учеников рещать задачи по физике и
+        астрономии.</a>
+    <a>Yuamble — блокчейн без комиссий и с быстрой обработкой транзакций. В нем также будет добавлен EVM (Ethereum Virtual
+    Machine).</a>
+</div>
+<header>
+    <div class="header-in">
+        <a class="header-text" href="../">Проекты</a>
+        <a class="header-text" href="../about">О себе</a>
+        <a class="header-text" href="../astro">Астрономия</a>
+    </div>
+    <div class="header-in-2">
+        <a href="https://twitter.com/iaa2005">
+            <img class="img-social" src="../images/twitter.svg">
+        </a>
+        <a href="https://t.me/iaa2005">
+            <img class="img-social" src="../images/telegram.svg">
+        </a>
+        <a href="https://github.com/iaa2005">
+            <img class="img-social" src="../images/github.svg">
+        </a>
+    </div>
+</header>
+<style>
+    body {
+        margin: 0;
+        background: white;
+        width: 100vw;
+        height: 100vh;
+    }
+    header {
+        top: 0;
+        position: fixed;
+        width: -webkit-fill-available;
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        align-items: center;
+    }
+    .header-in {
+        display: flex;
+        gap: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-in-2 {
+        display: flex;
+        gap: 15px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .header-text {
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        transition: color 0.5s;
+    }
+    .text {
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-text:hover {
+        color: black;
+    }
+    .img-social {
+        width: 25px;
+    }
+    .div-main {
+        display: grid;
+        justify-items: center;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin: auto;
+        margin-top: 120px;
+        max-width: 500px;
+        gap: 30px;
+        opacity: 0;
+
+        font-family: -apple-system, sans-serif;
+        text-decoration: none;
+        color: #767678;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-align: justify;
+        hyphens: auto;
+        -epub-hyphens: auto;
+
+        animation: opacity-00-100;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        /*animation-timing-function: ease-out;*/
+    }
+    @keyframes opacity-00-100 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+</body>
+</html>

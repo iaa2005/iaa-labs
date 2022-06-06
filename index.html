@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,9 @@
 </div>
 <header>
     <div class="header-in">
-        <a class="header-text" href="">Проекты</a><a class="header-text" href="astro">Астрономия</a>
+        <a class="header-text" href="">Проекты</a>
+        <a class="header-text" href="about">О себе</a>
+        <a class="header-text" href="astro">Астрономия</a>
     </div>
 
     <div class="header-in-2">
@@ -120,6 +122,23 @@
     }
     .img-social {
         width: 25px;
+    }
+    .block-main {
+        opacity: 0;
+        animation: opacity-00-100;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        /*animation-timing-function: ease-out;*/
+    }
+    @keyframes opacity-00-100 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 </style>
 </body>

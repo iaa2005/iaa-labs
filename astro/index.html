@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,14 @@
 <body>
 <div class="div-main">
     <a class="text">270 дней астрономии</a>
+    <a class="text">Speedrun решений задач по астрономии.</a>
     <div class="calendar-div"></div>
 </div>
 <header>
     <div class="header-in">
-        <a class="header-text" href="../">Проекты</a><a class="header-text" href="../astro">Астрономия</a>
+        <a class="header-text" href="../">Проекты</a>
+        <a class="header-text" href="../about">О себе</a>
+        <a class="header-text" href="../astro">Астрономия</a>
     </div>
     <div class="header-in-2">
         <a href="https://twitter.com/iaa2005">
@@ -83,13 +86,30 @@
         width: 25px;
     }
     .div-main {
-        margin-top: 120px;
+        margin-top: 130px;
         display: grid;
         justify-items: center;
+        opacity: 0;
+        height: fit-content;
+
+        animation: opacity-00-100-2;
+        animation-duration: 1.2s;
+        animation-iteration-count: 1;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        /*animation-timing-function: ease-out;*/
+    }
+    @keyframes opacity-00-100-2 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     .calendar-div {
-        height: -webkit-fill-available;
+        /*height: -webkit-fill-available;*/
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 50px;

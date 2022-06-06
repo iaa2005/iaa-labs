@@ -29,7 +29,7 @@ $(document).ready(async function() {
         // }
 
         if (window.scrollY / window.screen.height < 1) {
-            $(".block-main").removeClass("remove");
+            $(".block-main").removeClass("remove").css("animation", "--");
         } else {
             $(".block-main").addClass("remove");
         }

@@ -1,4 +1,3 @@
-
 $(document).ready(async function() {
 
     let date1 = new Date("06/06/2022");
@@ -7,7 +6,7 @@ $(document).ready(async function() {
     let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
     let days = Math.floor(Difference_In_Days);
 
-    let delay = 0.5;
+    let delay = 1;
     for (let i = 0; i < 270; i++) {
         if (days <= 0) {
             $(".calendar-div").append(`<div class="celum trans"></div>`);
@@ -17,4 +16,5 @@ $(document).ready(async function() {
         delay += 0.05;
         days--;
     }
+
 });
