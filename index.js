@@ -45,6 +45,12 @@ $(document).ready(async function() {
             $(".block-3").addClass("remove");
         }
 
-        console.log(window.scrollY / window.screen.height);
+        if (window.scrollY / window.screen.height > 7 && window.scrollY / window.screen.height < 9) {
+            $(".block-4").removeClass("remove");
+        } else {
+            $(".block-4").addClass("remove");
+        }
+
+        // console.log(window.scrollY / window.screen.height);
     });
 });
