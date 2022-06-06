@@ -1,4 +1,5 @@
 $(document).ready(async function() {
+    $("body").css("height", (window.screen.height * 9)+ "px")
 
     window.addEventListener('scroll', function () {
         $(".block-main").css("opacity", (1 - window.scrollY / window.screen.height));
