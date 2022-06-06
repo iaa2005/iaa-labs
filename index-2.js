@@ -8,7 +8,7 @@ $(document).ready(async function() {
     let days = Math.floor(Difference_In_Days);
 
     let delay = 0.5;
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 270; i++) {
         if (days <= 0) {
             $(".calendar-div").append(`<div class="celum trans"></div>`);
         } else {
